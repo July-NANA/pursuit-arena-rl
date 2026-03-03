@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-
+# Evaluate a fixed policy and summarize capture and movement quality metrics.
 def evaluate_greedy(env, agent, n_episodes: int = 200, stage: str = "C") -> dict[str, float]:
     capture_count = 0
     steps_to_capture = 0

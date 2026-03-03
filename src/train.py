@@ -14,7 +14,7 @@ def build_stage_schedule(curriculum: list[tuple[str, int]], episodes: int) -> li
         schedule.extend([curriculum[-1][0]] * (episodes - len(schedule)))
     return schedule[:episodes]
 
-
+# Train the agent across staged difficulty and record learning history.
 def train(env, agent, episodes: int, curriculum: list[tuple[str, int]], callback: Callable | None = None) -> dict[str, list[float]]:
     schedule = build_stage_schedule(curriculum, episodes)
 
