@@ -26,7 +26,6 @@ This project builds a pursuit game on a 10x10 grid with obstacles. The enemy is 
 
 ## Setup
 ```bash
-cd /Users/fanyuhang/Documents/CDS524/IndividualAssignment/pursuit-arena-rl
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
